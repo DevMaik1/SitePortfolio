@@ -262,7 +262,7 @@ a:hover{
         position: relative;
         top: 180px;
         height: 120px;
-        left: 140px;
+        left: 120px;
     }
 
     #h2-Sobre{
@@ -270,13 +270,13 @@ a:hover{
         font-family: Arial;
         position: absolute;
         top: 350px;
-        left: 153px;
+        left: 146px;
     }
 
     #h1-Sobre{
         position: absolute;
         top: 385px;
-        left: 115px;
+        left: 95px;
         font-size: xx-large;
     }
 
