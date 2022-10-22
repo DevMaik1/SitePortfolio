@@ -193,6 +193,7 @@ a:hover{
     position: absolute;
     top: 1350px;
     left: 545px;
+    border-radius: 10px;
 }
 
 #hr-Projetos{
@@ -379,6 +380,7 @@ a:hover{
         top: 1100px;
         left: 55px;
         height: 120px;
+        border-radius: 10px;
     }
 
     #Luffy_Games{
