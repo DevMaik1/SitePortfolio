@@ -270,19 +270,19 @@ a:hover{
         font-family: Arial;
         position: absolute;
         top: 350px;
-        left: 146px;
+        left: 140px;
     }
 
     #h1-Sobre{
         position: absolute;
         top: 385px;
-        left: 95px;
+        left: 75px;
         font-size: xx-large;
     }
 
     #p-Sobre{
         position: absolute;
-        top: 495px;
+        top: 475px;
         left: 10px;
         font-family: system-ui;
         font-size:smaller
