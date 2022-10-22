@@ -369,22 +369,22 @@ a:hover{
         color: aqua;
         font-family: Arial;
         position: absolute;
-        top: 910px;
-        left: 140px;
+        top: 940px;
+        left: 120px;
     }
 
     #Img-Projeto-1{
         height: 120px;
         position: absolute;
         top: 1100px;
-        left: 50px;
+        left: 55px;
         height: 120px;
     }
 
     #Luffy_Games{
         position: absolute;
         top: 1240px;
-        left: 125px;
+        left: 135px;
         color: #ff0000;
         text-decoration: underline;
     }
@@ -400,7 +400,7 @@ a:hover{
     #Cpr-DevMaiki{
         position: absolute;
         top: 1390px;
-        left: 45px;
+        left: 50px;
         font-family: system-ui;
     }
 
