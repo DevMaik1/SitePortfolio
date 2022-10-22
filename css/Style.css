@@ -283,7 +283,7 @@ a:hover{
     #p-Sobre{
         position: absolute;
         top: 475px;
-        left: 20px;
+        left: 25px;
         font-family: system-ui;
         font-size:smaller
     }
@@ -377,14 +377,14 @@ a:hover{
         height: 120px;
         position: absolute;
         top: 1100px;
-        left: 80px;
+        left: 60px;
         height: 120px;
     }
 
     #Luffy_Games{
         position: absolute;
         top: 1240px;
-        left: 160px;
+        left: 140px;
         color: #ff0000;
         text-decoration: underline;
     }
@@ -400,7 +400,7 @@ a:hover{
     #Cpr-DevMaiki{
         position: absolute;
         top: 1390px;
-        left: 75px;
+        left: 55px;
         font-family: system-ui;
     }
 
