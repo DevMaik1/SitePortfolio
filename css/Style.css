@@ -1,3 +1,4 @@
+@media (max-width: 1366px) {
 body, ul{
     background-color: #070c17;
     color: white;
@@ -218,7 +219,7 @@ a:hover{
     left: 540px;
     font-family: system-ui;
 }
-
+}
 @media (max-width: 600px) {
     #icon{
         display: flex;
