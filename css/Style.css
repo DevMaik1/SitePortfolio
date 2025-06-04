@@ -1,43 +1,34 @@
-@media (max-width: 1366px) {
-body, ul{
+/* 🔥 Estilo Global */
+body {
     background-color: #070c17;
     color: white;
-    margin: auto;
+    margin: 0;
     font-weight: 300;
     line-height: 1.8;
-    padding: 0px;
-    margin: 0px;
+    font-family: system-ui, sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
-::-webkit-scrollbar{
+a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* 🔗 Scrollbar */
+::-webkit-scrollbar {
     width: 10px;
     background: rgb(24, 3, 39);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: aqua;
 }
 
-#h1{
-    position: relative;
-    left: 75px;
-    font-size: x-large;
-    font-family: system-ui;
-
-}
-
-a{
-    color: White;
-    text-decoration:none;
-    font-family: sans-serif;
-}
-
-a:hover{
-    background: rgba(0, 0, 0, .05);
-}
-
-#header{
+/* 🔝 Header */
+header {
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
@@ -45,367 +36,168 @@ a:hover{
     align-items: center;
     justify-content: space-between;
     background: rgb(24, 3, 39);
+    position: relative;
 }
 
-#Menu{
-    display: flex;
-    list-style: none;
-    gap: 1.0rem;
-}
-
-#Menu a{
-    display: block;
-}
-
-
-
-#Logo{
-    position: absolute;
+#logo {
     height: 60px;
-    border-radius: 100%;
-    left:15px
+    border-radius: 50%;
 }
 
-#icon{
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    padding: 0.5rem;
+}
+
+/* 🎛️ Menu Mobile */
+#menu-icon {
     display: none;
-    }
+    cursor: pointer;
+    background: none;
+    border: none;
+}
 
-
-#FotoMinha{
+nav.mobile {
+    display: none;
+    flex-direction: column;
     position: absolute;
-    height: 280px;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: rgb(24, 3, 39);
+}
+
+nav.mobile a {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+}
+
+/* 👤 Sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.sobre img {
+    height: 250px;
     border-radius: 35%;
-    top: 280px;
-    left: 530px;
 }
 
-#h2-Sobre{
+.sobre h2 {
     color: aqua;
-    font-family: Arial;
-    position: absolute;
-    top: 540px;
-    left: 615px;
+    margin-top: 1rem;
 }
 
-#h1-Sobre{
-    position: absolute;
-    top: 575px;
-    left: 575px;
-    font-size: xx-large;
+.sobre p {
+    max-width: 600px;
 }
 
-#p-Sobre{
-    position: absolute;
-    top: 640px;
-    left: 430px;
-    font-family: system-ui;
+/* 💡 Habilidades */
+.habilidades {
+    padding: 2rem;
+    text-align: center;
 }
 
-#hr-sobre{
-    position: relative;
-    top: 640px;
-    border-color: aqua;
-    height: 3px;
-    background-color: aqua;
-}
-
-
-#h2-Habilidades{
+.habilidades h2 {
     color: aqua;
-    font-family: Arial;
-    position: absolute;
-    top: 760px;
-    left: 585px;
+    margin-bottom: 1rem;
 }
 
-#Python-Img{
-    height: 50px;
-    position: absolute;
-    top: 1000px;
-    left: 320px;
+.habilidades .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-#h3-Python{
-    position: absolute;
-    top: 990px;
-    left: 385px;
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-#JS-Img{
-    height: 50px;
-    position: absolute;
-    top: 1000px;
-    left: 530px;
-    border-radius: 20%;
+.skill img {
+    height: 60px;
 }
 
-#h3-JS{
-    position: absolute;
-    top: 990px;
-    left: 595px;
+/* 📦 Projetos */
+.projetos {
+    padding: 2rem;
+    text-align: center;
 }
 
-#Html-Img{
-    height: 65px;
-    position: absolute;
-    top: 992px;
-    left: 740px;
-}
-
-#h3-Html{
-    position: absolute;
-    top: 990px;
-    left: 820px;
-}
-
-
-#CSS-Img{
-    height: 68px;
-    position: absolute;
-    top: 992px;
-    left: 950px;
-}
-
-#h3-Css{
-    position: absolute;
-    top: 990px;
-    left: 1030px;
-}
-
-#hr-Habilidades{
-    position: relative;
-    top: 1050px;
-    border-color: aqua;
-    height: 3px;
-    background-color: aqua;
-}
-
-#h2-Projetos{
+.projetos h2 {
     color: aqua;
-    font-family: Arial;
-    position: absolute;
-    top: 1170px;
-    left: 605px;
+    margin-bottom: 1rem;
 }
 
-#Img-Projeto-1{
-    height: 120px;
-    position: absolute;
-    top: 1350px;
-    left: 545px;
+.projetos img {
+    height: 150px;
     border-radius: 10px;
 }
 
-#hr-Projetos{
-    position: relative;
-    top: 1450px;
-    border-color: aqua;
-    height: 3px;
-    background-color: aqua;
-}
-
-#Luffy_Games{
-    position: absolute;
-    top: 1490px;
-    left: 620px;
-    color: #ff0000;
+.projetos a {
+    color: red;
     text-decoration: underline;
 }
 
-#Cpr-DevMaiki{
-    position: absolute;
-    top: 1690px;
-    left: 540px;
+/* 📜 Rodapé */
+footer {
+    padding: 1rem;
+    text-align: center;
     font-family: system-ui;
 }
+
+/* 🌟 Barras */
+hr {
+    border: none;
+    height: 3px;
+    background-color: aqua;
+    margin: 2rem auto;
+    width: 80%;
 }
-@media (max-width: 600px) {
-    #icon{
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    nav.mobile.active {
         display: flex;
     }
 
-    #icon button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    .sobre img {
+        height: 150px;
     }
 
-    #Menu{
-       display: block; 
-       position: absolute;
-       width: 100%;
-       top: 70px;
-       right:0px;
-       background: rgb(24, 3, 39);
-       transition: .6s;
-       height: 0px;
-       z-index: 1000;
-       visibility: hidden;
-       overflow-y: hidden;
-    }
-    
-    #nav.active #Menu{
-      height: calc(100vh - 70px);
-      visibility: visible;
+    .habilidades .skills {
+        gap: 1rem;
     }
 
-    #Menu a{
-        padding: .1rem 0;
-        margin: 0 .1rem;
-        border-bottom: 2px solid rgb(255, 255, 255);
+    .projetos img {
+        height: 100px;
     }
- 
-     li{
-        text-align: center;
-    }
-
-    #FotoMinha{
-        position: relative;
-        top: 175px;
-        height: 120px;
-        left: 120px;
-    }
-
-    #h2-Sobre{
-        color: aqua;
-        font-family: Arial;
-        position: absolute;
-        top: 350px;
-        left: 140px;
-    }
-
-    #h1-Sobre{
-        position: absolute;
-        top: 385px;
-        left: 85px;
-        font-size: xx-large;
-    }
-
-    #p-Sobre{
-        position: absolute;
-        top: 475px;
-        left: 25px;
-        font-family: system-ui;
-        font-size:smaller
-    }
-
-    #hr-sobre{
-        position: relative;
-        top: 395px;
-        border-color: aqua;
-        height: 3px;
-        background-color: aqua;
-    }
-
-    #h2-Habilidades{
-        color: aqua;
-        font-family: Arial;
-        position: absolute;
-        top: 600px;
-        left: 110px;
-    }
-
-    #Python-Img{
-        height: 50px;
-        position: absolute;
-        top: 760px;
-        left: 20px;
-    }
-
-    #h3-Python{
-        position: absolute;
-        top: 790px;
-        left: 15px;
-    }
-
-    #JS-Img{
-        height: 45px;
-        position: absolute;
-        top: 760px;
-        left: 125px;
-        border-radius: 20%;
-    }
-
-    #h3-JS{
-        position: absolute;
-        top: 790px;
-        left: 105px;
-    }
-
-    #Html-Img{
-        height: 60px;
-        position: absolute;
-        top: 750px;
-        left: 215px;
-    }
-
-    #h3-Html{
-        position: absolute;
-        top: 790px;
-        left: 220px;
-    }
-
-    #CSS-Img{
-        height: 60px;
-        position: absolute;
-        top: 750px;
-        left: 297px;
-    }
-
-    #h3-Css{
-        position: absolute;
-        top: 790px;
-        left: 310px;
-    }
-
-    #hr-Habilidades{
-        position: relative;
-        top: 700px;
-        border-color: aqua;
-        height: 3px;
-        background-color: aqua;
-    }
-
-    #h2-Projetos{
-        color: aqua;
-        font-family: Arial;
-        position: absolute;
-        top: 920px;
-        left: 120px;
-    }
-
-    #Img-Projeto-1{
-        height: 120px;
-        position: absolute;
-        top: 1100px;
-        left: 55px;
-        height: 120px;
-        border-radius: 10px;
-    }
-
-    #Luffy_Games{
-        position: absolute;
-        top: 1240px;
-        left: 135px;
-        color: #ff0000;
-        text-decoration: underline;
-    }
-
-    #hr-Projetos{
-        position: relative;
-        top: 1120px;
-        border-color: aqua;
-        height: 3px;
-        background-color: aqua;
-    }
-
-    #Cpr-DevMaiki{
-        position: absolute;
-        top: 1390px;
-        left: 50px;
-        font-family: system-ui;
-    }
-
 }
-    
+
+@media (max-width: 480px) {
+    .sobre img {
+        height: 120px;
+    }
+
+    .habilidades .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}
