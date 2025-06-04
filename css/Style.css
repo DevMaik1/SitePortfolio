@@ -1,203 +1,148 @@
-/* 🔥 Estilo Global */
-body {
-    background-color: #070c17;
-    color: white;
+/* Reset básico */
+* {
     margin: 0;
-    font-weight: 300;
-    line-height: 1.8;
-    font-family: system-ui, sans-serif;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-/* 🔗 Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-    background: rgb(24, 3, 39);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: aqua;
-}
-
-/* 🔝 Header */
-header {
+    padding: 0;
     box-sizing: border-box;
-    height: 70px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgb(24, 3, 39);
-    position: relative;
 }
 
-#logo {
-    height: 60px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+#Logo {
+    width: 60px;
     border-radius: 50%;
 }
 
-nav {
+#Menu {
+    list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 20px;
 }
 
-nav a {
-    padding: 0.5rem;
+#Menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* 🎛️ Menu Mobile */
-#menu-icon {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
+#icon {
+    display: none; /* Oculta o menu hambúrguer inicialmente */
 }
 
-nav.mobile {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    background: rgb(24, 3, 39);
-}
-
-nav.mobile a {
-    border-bottom: 1px solid white;
-    padding: 1rem;
-}
-
-/* 👤 Sobre */
-.sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+/* Sobre */
+#Sobre {
     text-align: center;
+    padding: 40px 20px;
 }
 
-.sobre img {
-    height: 250px;
-    border-radius: 35%;
+#Sobre img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.sobre h2 {
-    color: aqua;
-    margin-top: 1rem;
-}
-
-.sobre p {
-    max-width: 600px;
-}
-
-/* 💡 Habilidades */
-.habilidades {
-    padding: 2rem;
+/* Habilidades */
+#Habilidades {
     text-align: center;
+    padding: 40px 20px;
 }
 
-.habilidades h2 {
-    color: aqua;
-    margin-bottom: 1rem;
-}
-
-.habilidades .skills {
+.habilidades-container {
     display: flex;
     justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 2rem;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.habilidade img {
+    width: 70px;
 }
 
-.skill img {
-    height: 60px;
+.habilidade h3 {
+    margin-top: 10px;
 }
 
-/* 📦 Projetos */
-.projetos {
-    padding: 2rem;
+/* Projetos */
+#Projetos {
     text-align: center;
+    padding: 40px 20px;
 }
 
-.projetos h2 {
-    color: aqua;
-    margin-bottom: 1rem;
+#Projetos img {
+    width: 100%;
+    max-width: 500px;
 }
 
-.projetos img {
-    height: 150px;
-    border-radius: 10px;
-}
-
-.projetos a {
-    color: red;
-    text-decoration: underline;
-}
-
-/* 📜 Rodapé */
+/* Footer */
 footer {
-    padding: 1rem;
+    background-color: #222;
+    color: white;
     text-align: center;
-    font-family: system-ui;
+    padding: 10px;
 }
 
-/* 🌟 Barras */
-hr {
-    border: none;
-    height: 3px;
-    background-color: aqua;
-    margin: 2rem auto;
-    width: 80%;
-}
+/* ======================
+   🔥 Media Queries 🔥
+   ====================== */
 
-/* 📱 Responsividade */
 @media (max-width: 768px) {
-    nav {
-        display: none;
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    #menu-icon {
+    #Menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #icon {
         display: block;
     }
 
-    nav.mobile.active {
-        display: flex;
-    }
-
-    .sobre img {
-        height: 150px;
-    }
-
-    .habilidades .skills {
-        gap: 1rem;
-    }
-
-    .projetos img {
-        height: 100px;
+    .habilidades-container {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
-    .sobre img {
-        height: 120px;
+    header h1 {
+        font-size: 1.5rem;
     }
 
-    .habilidades .skills {
-        flex-direction: column;
-        align-items: center;
+    #Logo {
+        width: 50px;
+    }
+
+    .habilidade img {
+        width: 50px;
+    }
+
+    #Sobre img {
+        width: 120px;
     }
 }
