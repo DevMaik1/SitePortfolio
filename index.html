@@ -5,72 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio DevMaiki</title>
+    <title>Portfólio DevMaiki</title>
     <link rel="icon" href="img/Cima.png">
     <link rel="stylesheet" href="css/Style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1138681692440991"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
-        <h1 id="h1">Portfólio Dev Maiki</h1>
-        <img id="Logo" src="img/Maiki.jpg" alt="Logo Maiki">
-        <nav id="nav">
-            <ul id="Menu">
-                <li><a href="https://www.youtube.com/channel/UCDf54RSjmtVvaYZ2d7o60EA" target="_blank">Youtube</a></li>
-                <li><a href="https://www.instagram.com/ak.maiki/" target="_blank">Instagram</a></li>
-                <li><a href="https://github.com/DevMaik1" target="_blank">GitHub</a></li>
-            </ul>
-            <div id="icon">
-                <button onclick="menuShow()"><img src="img/Aberto.svg" alt="Menu"></button>
-            </div>
-        </nav>
+        <div class="container">
+            <img id="Logo" src="img/Maiki.jpg" alt="Logo Maiki">
+            <h1>Portfólio Dev Maiki</h1>
+            <nav id="nav">
+                <ul id="Menu">
+                    <li><a href="https://www.youtube.com/channel/UCDf54RSjmtVvaYZ2d7o60EA" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/ak.maiki/" target="_blank">Instagram</a></li>
+                    <li><a href="https://github.com/DevMaik1" target="_blank">GitHub</a></li>
+                </ul>
+                <div id="icon">
+                    <button onclick="menuShow()"><img src="img/Aberto.svg" alt="Menu"></button>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main id="main">
+    <main>
         <section id="Sobre">
             <img id="FotoMinha" src="img/FotoMinha.jpg" alt="Foto do Criador">
-            <h2 id="h2-Sobre">▸ Sobre</h2>
-            <h1 id="h1-Sobre">Olá, Mundo</h1>
-            <p id="p-Sobre">
+            <h2>▸ Sobre</h2>
+            <h1>Olá, Mundo</h1>
+            <p>
                 Meu nome é Michell Augusto, atualmente moro em Salvador na Bahia.<br>
                 Tenho 17 anos e atualmente atuo na área de Desenvolvimento Web.
             </p>
-            <hr id="hr-sobre">
+            <hr>
         </section>
 
         <section id="Habilidades">
-            <h2 id="h2-Habilidades">▸ Habilidades</h2>
-            <div class="habilidade">
-                <img id="Python-Img" src="img/Python.png" alt="Python">
-                <h3 id="h3-Python">Python</h3>
+            <h2>▸ Habilidades</h2>
+            <div class="habilidades-container">
+                <div class="habilidade">
+                    <img src="img/Python.png" alt="Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="habilidade">
+                    <img src="img/JS.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="habilidade">
+                    <img src="img/Html.png" alt="HTML">
+                    <h3>HTML</h3>
+                </div>
+                <div class="habilidade">
+                    <img src="img/CSS.png" alt="CSS">
+                    <h3>CSS</h3>
+                </div>
             </div>
-            <div class="habilidade">
-                <img id="JS-Img" src="img/JS.png" alt="JavaScript">
-                <h3 id="h3-JS">JavaScript</h3>
-            </div>
-            <div class="habilidade">
-                <img id="Html-Img" src="img/Html.png" alt="HTML">
-                <h3 id="h3-Html">HTML</h3>
-            </div>
-            <div class="habilidade">
-                <img id="CSS-Img" src="img/CSS.png" alt="CSS">
-                <h3 id="h3-Css">CSS</h3>
-            </div>
-            <hr id="hr-Habilidades">
+            <hr>
         </section>
 
         <section id="Projetos">
-            <h2 id="h2-Projetos">▸ Projetos</h2>
-            <img id="Img-Projeto-1" src="img/Imagem-Site-Jogos.PNG" alt="Imagem do Projeto de Site">
-            <hr id="hr-Projetos">
-            <a id="Luffy_Games" href="https://luffy-games.netlify.app/" target="_blank">Luffy Games</a>
+            <h2>▸ Projetos</h2>
+            <img src="img/Imagem-Site-Jogos.PNG" alt="Imagem do Projeto de Site">
+            <hr>
+            <a href="https://luffy-games.netlify.app/" target="_blank">Luffy Games</a>
         </section>
     </main>
 
     <footer>
-        <h1 id="Cpr-DevMaiki">© 2022 Dev Maiki</h1>
+        <h1>© 2022 Dev Maiki</h1>
     </footer>
 
     <script src="./JavaScript/Script.js"></script>
